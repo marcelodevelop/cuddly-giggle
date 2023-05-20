@@ -1,5 +1,4 @@
-import { ReactNode, useEffect, useRef } from 'react'
-import { FC } from 'react'
+import { ReactNode, FC } from 'react'
 
 import { LayoutContainer, LayoutSpoth, SpothLight } from "./Layout.styles"
 

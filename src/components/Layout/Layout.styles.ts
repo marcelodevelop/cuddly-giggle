@@ -14,7 +14,7 @@ export const LayoutSpoth = styled.div`
     min-height: 100%;
     position: relative;
     z-index: 2;
-    padding: 150px;
+    padding: 100px 200px;;
 
     @media screen and (max-width: 600px) {
         flex-direction: column;

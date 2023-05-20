@@ -1,8 +1,9 @@
+import AboutMe from "@/components/AboutMe"
+
 const Home = () => {
     return (
         <>
-        <br/>
-        Home
+            <AboutMe/>
         </>
     )
 }

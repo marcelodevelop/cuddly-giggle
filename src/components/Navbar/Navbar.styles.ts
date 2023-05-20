@@ -11,7 +11,7 @@ export const NavbarContainer = styled.div`
     @media screen and (max-width: 700px) {
         height: max-content;
         width: 100%;
-        text-align: center;
+        text-align: left;
     }
 `
 
@@ -38,6 +38,7 @@ export const AboutMe = styled.p`
     font-size: ${({ theme }) => theme.sizes.turtle};
     margin-top: 20px;
     max-width: 350px;
+    line-height: ${({ theme }) => theme.sizes.cat};
 `
 
 export const Menu = styled.div`
