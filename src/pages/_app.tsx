@@ -7,6 +7,7 @@ import { GlobalStyle } from '@/theme/global'
 
 import Layout from "@/components/Layout";
 import Navbar from "@/components/Navbar";
+import RightLayout from "@/components/RightLayout";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
@@ -18,7 +19,9 @@ export default function App({ Component, pageProps }: AppProps) {
       <ThemeProvider theme={defaultTheme}>
         <Layout>
           <Navbar/>
-          <Component {...pageProps} />
+          <RightLayout>
+            <Component {...pageProps} />
+          </RightLayout>
         </Layout>
       </ThemeProvider>
     </>
