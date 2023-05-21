@@ -1,4 +1,5 @@
 export default {
+    caracol: '12px',
     bird: '14px',
     turtle: '16px',
     dog: '18px',

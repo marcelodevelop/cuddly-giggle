@@ -5,13 +5,15 @@ import Link from "next/link"
 export const NavbarContainer = styled.div`
     display: flex;
     height: 100%;
-    width: 50%;
+    width: max-content;
     flex-direction: column;
+    position: fixed;
 
     @media screen and (max-width: 700px) {
         height: max-content;
         width: 100%;
         text-align: left;
+        position: initial;
     }
 `
 
@@ -68,6 +70,7 @@ export const StyledLink = styled(Link)`
 
         &:before {
             animation: barAnimation .1s both;
+            background: ${({ theme }) => theme.colors.verdiGris};
         }
     }
 

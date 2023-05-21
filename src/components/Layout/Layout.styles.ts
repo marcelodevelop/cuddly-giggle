@@ -3,9 +3,10 @@ import styled from "styled-components"
 export const LayoutContainer = styled.div`
     display: flex;
     width: 100%;
-    min-height: 100%;
+    max-height: 100%;
     position: relative;
     background: ${({ theme }) => theme.colors.oxfordBlue};
+    height: 100%;
 `   
 
 export const LayoutSpoth = styled.div`
