@@ -24,7 +24,7 @@ const AboutMe = () => {
              {" "} where I started to learn about React and React Native.
             </StyledText>
             <StyledText>
-                Fast-forward to today, and I've had the privilege of building software for a 
+                Fast-forward to today, and I&apos;ve had the privilege of building software for a 
                 {" "} <StyledLink href="https://wcanvas.com/">Creative Agency</StyledLink> and for
                 a {" "} <StyledLink href="https://www.quuack.com/">Product Development Company</StyledLink>
                 {" "} where I still working till today.
