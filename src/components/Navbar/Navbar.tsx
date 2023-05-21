@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Image from "next/image"
 
 import { 
     AboutMe,
@@ -6,7 +7,9 @@ import {
     NavbarContainer, 
     NavbarLogo, 
     NavbarLogoDescription, 
-    StyledLink 
+    StyledLink,
+    SocialMedia,
+    StyledIconLink,
 } from "./Navbar.styles"
 
 const Navbar = () => {
@@ -24,8 +27,37 @@ const Navbar = () => {
            <Menu>
                 <StyledLink onClick={handleOnClick} className={active === "About" ? 'active' : ''} href="#about-me">About</StyledLink>
                 <StyledLink onClick={handleOnClick} className={active === "Experience" ? 'active' : ''} href="#experience">Experience</StyledLink>
-                <StyledLink onClick={handleOnClick} className={active === "Contact" ? 'active' : ''} href="#section-1">Contact</StyledLink>
+                <StyledLink onClick={handleOnClick} className={active === "Contact" ? 'active' : ''} href="#contact">Contact</StyledLink>
            </Menu>
+           <SocialMedia>
+            <StyledIconLink href="https://github.com/marcelodevelop">
+                <Image
+                    priority
+                    src="/icons/github.svg"
+                    height={35}
+                    width={35}
+                    alt="Checkout my Github"
+                />
+            </StyledIconLink>
+            <StyledIconLink href="https://www.linkedin.com/in/marcelo-acevedo-0856011ba/">
+                <Image
+                    priority
+                    src="/icons/linkedin.svg"
+                    height={35}
+                    width={35}
+                    alt="Checkout my Linkedin"
+                />  
+            </StyledIconLink>
+            <StyledIconLink href="mailto: acevedomarcelo07@gmail.com">
+                <Image
+                    priority
+                    src="/icons/email.svg"
+                    height={35}
+                    width={35}
+                    alt="Contact me!"
+                />
+            </StyledIconLink>
+           </SocialMedia>
         </NavbarContainer>
     )
 }

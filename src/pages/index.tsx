@@ -2,24 +2,16 @@ import { createClient } from "next-sanity";
 
 import AboutMe from "@/components/AboutMe"
 import Experience from "@/components/Experience"
+import Contact from "@/components/Contact";
 
 const Home = (props: any) => {
     const { experience } = props
-
-    typeof document !== 'undefined' && document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-          e.preventDefault();
-  
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
 
     return (
         <>
             <AboutMe/>
             <Experience experience={experience}/>
+            <Contact/>
         </>
     )
 }
