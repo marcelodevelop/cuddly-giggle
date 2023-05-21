@@ -5,10 +5,10 @@ import Link from "next/link"
 export const AboutMeContainer = styled.div`
     display: flex;
     flex-direction: column;
-    max-width: 70%;
+    width: 70%;
 
     @media screen and (max-width: 600px) {
-        max-width: 100%;
+        width: 100%;
     }
 `
 

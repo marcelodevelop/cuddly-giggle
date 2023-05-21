@@ -7,7 +7,7 @@ import {
 
 const AboutMe = () => {
     return (
-        <AboutMeContainer>
+        <AboutMeContainer id="about-me">
             <Title>About me</Title>
             <StyledText>
              Back in 2013, I decided to start programming to copy a web based game called
