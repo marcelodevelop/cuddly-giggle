@@ -5,11 +5,16 @@ export const Layout = styled.div`
     flex-direction: column;
     min-height: 100%;
     align-items: center;
-    width: 100%;
+    width: 70%;
     height: max-content;
-    margin-left: 30%;
+    margin-left: auto;
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 700px) {
         margin-left: 0;
+        width: 100%;
+    }
+
+    @media screen and (min-width: 800px) {
+        width: 60%;
     }
 `

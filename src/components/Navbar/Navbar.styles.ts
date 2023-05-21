@@ -96,3 +96,17 @@ export const StyledLink = styled(Link)`
         display: none;
     }
 `
+
+export const SocialMedia = styled.div`
+    width: 100%;
+    display: flex;
+    margin-top: 60px;
+`   
+
+export const StyledIconLink = styled(Link)`
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+`

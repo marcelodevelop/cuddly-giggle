@@ -7,6 +7,7 @@ export const LayoutContainer = styled.div`
     position: relative;
     background: ${({ theme }) => theme.colors.oxfordBlue};
     height: 100%;
+    scroll-behavior: smooth;
 `   
 
 export const LayoutSpoth = styled.div`
@@ -23,7 +24,7 @@ export const LayoutSpoth = styled.div`
         align-items: center;
     }
 
-    @media screen and (max-width: 960px) {
+    @media screen and (max-width: 1200px) {
         padding: 50px;
         align-items: flex-start;
     }
